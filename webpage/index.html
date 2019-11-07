@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<img src="random_numbers2.png" alt=numbers width="500" height="333">
+
+
+
+
+<h1>Random Number Guesser of Awesomeness </h1>
+
+<p style = "font-family:georgia,garamond,serif;font-size:16px;font-style:italic;">
+         This is a game. 
+
+<button onclick="game()">Click this button to determine your fate</button>
+
+<script>
+function game() {
+var randomNumber = Math.floor(Math.random()*10);
+var userNumber = prompt("Please enter a number. (1-10)")
+if (randomNumber.toString() === userNumber) {
+    alert('Congratulations! You win!')
+} else {
+    alert('Aww. Better luck next time.' + " The correct number was " + randomNumber + '.')
+}
+}
+</script>
+      </p>
+
+</body>
+</html>
